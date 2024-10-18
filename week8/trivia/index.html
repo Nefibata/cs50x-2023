@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            window.onload = function(){
+            let body = document.querySelector('body');
+            document.querySelector('#button1').addEventListener('click', function() {
+                body.style.backgroundColor = 'green';
+                document.getElementById('comment').innerHTML = 'Correct!';
+            });
+            document.querySelector('#button2').addEventListener('click', function() {
+                body.style.backgroundColor = 'red';
+                document.getElementById('comment').innerHTML = 'Incorrect!';
+
+            });
+            document.querySelector('#button3').addEventListener('click', function() {
+                body.style.backgroundColor = 'red';
+                document.getElementById('comment').innerHTML = 'Incorrect!';
+
+            });
+        }
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>how are you? </h3>
+                <!-- TODO: Add multiple choice question here -->
+                <p id="comment"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <button id="button1">I'm fan</button>
+                <button id="button2" >thank you</button>
+                <button id="button3" >and you</button>
+                <!-- TODO: Add free response question here -->
+            </div>
+        </div>
+    </body>
+</html>
